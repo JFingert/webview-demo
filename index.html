@@ -6,6 +6,10 @@
 <body>
 	<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
 
+	<br>
+	The text below will be inserted from the Android app:
+	<div id="text"></div>
+
 	<script type="text/javascript">
 	    function showAndroidToast(toast) {
 	        Android.showToast(toast);
