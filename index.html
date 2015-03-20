@@ -16,7 +16,8 @@
 	    }
 
 	    function receiveText(text) {
-	    	document.getElementById('text').innerHTML = text;
+	    	var date = new Date();
+	    	document.getElementById('text').innerHTML = text + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
 	    }
 	</script>
 </body>
